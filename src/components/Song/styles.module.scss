@@ -1,0 +1,33 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  @media screen and (max-width: 425px) {
+    flex-direction: column;
+    align-items: center;
+    > .img__Wrapper {
+      justify-content: center;
+      margin: 0 auto;
+      margin-bottom: 0.4rem;
+    }
+  }
+
+  > .img__Wrapper {
+    display: flex;
+    position: relative;
+    width: clamp(200px, 80%, 500px);
+    height: auto;
+    position: relative;
+    margin-right: 0.4rem;
+
+    > img {
+      width: 100%;
+      width: clamp(150px, 80%, 500px);
+    }
+  }
+  > div {
+    margin-left: 1rem;
+    > p {
+      line-height: 1.4rem;
+    }
+  }
+}
