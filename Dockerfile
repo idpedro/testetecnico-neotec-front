@@ -7,9 +7,9 @@ RUN ls -al
 
 
 FROM node:14-alpine AS builder
-ENV API_HOSTNAME=neotechback
+ENV API_HOSTNAME=localhost
 ENV API_PORT=3333
-ENV NEXT_TELEMETRY_DISABLED 1
+ENV NEXT_TELEMETRY_DISABLED = 1
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY --from=deps /app/next.config.js ./
@@ -18,8 +18,8 @@ RUN yarn build
 
 FROM node:14-alpine AS runner
 ENV NODE_ENV=production
-ENV NEXT_TELEMETRY_DISABLED 1
-ENV API_HOSTNAME=neotechback
+ENV NEXT_TELEMETRY_DISABLED = 1
+ENV API_HOSTNAME=localhost
 ENV API_PORT=3333
 ARG PORT 3000
 
