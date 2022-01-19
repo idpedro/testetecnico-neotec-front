@@ -1,0 +1,35 @@
+.datalist {
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  overflow-y: hidden;
+  position: absolute;
+  max-width: 300px;
+  width: max(30vw, 300px);
+  top: 6rem;
+  border-radius: 0.4rem;
+  background: var(--white);
+  box-shadow: 0 0 5px 0 black;
+  > ul {
+    list-style: none;
+    width: 100%;
+    li {
+      &:hover {
+        background: var(--blue-200);
+      }
+      > button {
+        text-align: left;
+        padding: 0.8rem;
+        width: 100%;
+        background: none;
+        border: none;
+        outline: none;
+        &:active,
+        &:focus {
+          outline: none;
+          background: var(--blue-200);
+        }
+      }
+    }
+  }
+}
