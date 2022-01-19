@@ -30,18 +30,6 @@ Desafio técnico com a proposta de desenvolver uma aplicação frontend como uso
 - [x] Utilização de linters ou outras ferramentas de análise estática
 - [x] Docker
 
-#### Resultado
-
-
-
-![image-20220119130448649](/home/viceroy/.config/Typora/typora-user-images/image-20220119130448649.png)
-
-![image-20220119130504318](/home/viceroy/.config/Typora/typora-user-images/image-20220119130504318.png)
-
-![image-20220119130525112](/home/viceroy/.config/Typora/typora-user-images/image-20220119130525112.png)
-
-
-
 ### Executando o Projeto
 
 > Na raiz do projeto contém uma arquivo Dockerfile, nesse tem as receita para a construção da imagen do projeto.
