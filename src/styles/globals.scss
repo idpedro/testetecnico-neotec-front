@@ -1,0 +1,33 @@
+:root {
+  --gray-500: hsl(0, 0%, 84%);
+  --gary-200: hsl(0, 0%, 93%);
+  --blue-500: hsl(212, 73%, 59%);
+  --blue-200: hsl(212, 100%, 80%);
+
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+html,
+body {
+  width: 100%;
+}
+a,
+button {
+  cursor: pointer;
+}
+body {
+  background-color: var(--gary-200);
+  font-family: "Source Sans Pro", sans-serif;
+  overflow-x: hidden;
+}
