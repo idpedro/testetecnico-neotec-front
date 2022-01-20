@@ -37,7 +37,6 @@ Desafio técnico com a proposta de desenvolver uma aplicação frontend como uso
 ```bash
 ## Build da imagems
 ## Executar na raiz do projeto
-docker build  -t neotech-back:1.0.0 .
 docker build -t idpedroferreira/neotech-front:1.0.0 .
 ```
 
